@@ -43,16 +43,36 @@ body {
     background-color: aliceblue;
     border: 1px solid black;
     margin: auto;
+    margin-left: 10px;
+
+    /* For the cells */
+    display:flex;
+    flex-wrap: wrap;
 }
 
+.cell {
+    box-sizing: border-box;
+    border: 1px solid rgba(146, 141, 141, 0.377);
+}
 
 #options {
     border: 1px solid black;
     background-color: white;
     margin: auto;
+    margin-right: 10px;
+
+    /* For the option buttons */
+    display: flex;
+    flex-direction: column;
 }
 
-
+#reset {
+   margin: 15px auto;
+   width: 120px;
+   height: 40px;
+   color: beige;
+   background-color: brown;
+}
 
 
 
