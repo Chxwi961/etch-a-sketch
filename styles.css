@@ -68,14 +68,44 @@ body {
 
 #reset {
    margin: 15px auto;
-   width: 120px;
-   height: 40px;
+   width: 80%;
+   height: 7.5%;
    color: beige;
    background-color: brown;
 }
 
+.slidercontainer {
+    margin: 30px auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
 
 
+#slider {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    opacity: 0.9;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    background-color: rgba(230, 59, 59, 0.596);
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 17px;
+    height:17px;
+    background: red;
+    box-sizing: border-box;
+    border: 3px solid rgba(221, 20, 20, 0.651);
+    cursor: pointer;
+}
+
+
+#sliderText {
+    text-align: center;
+}
 
 
 
