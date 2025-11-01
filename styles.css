@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+button {
+    border-radius: 30px;
+}
+
+
 #website {
     display: flex;
     /* border: 10px solid purple; */
@@ -48,10 +53,15 @@ body {
     /* For the cells */
     display:flex;
     flex-wrap: wrap;
+
+    /* To prevent any weird dragging effect */
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .cell {
     box-sizing: border-box;
+    background-color: aliceblue;
     border: 1px solid rgba(146, 141, 141, 0.377);
 }
 
@@ -108,7 +118,61 @@ body {
 }
 
 
+.pencileraser {
+    display:flex;
+    /* border:1px solid black; */
+    flex-direction: column;
+    height: 19%;
+}
 
+#pencil ,
+#eraser {
+    background-color: brown;
+    color: beige;
+    margin: 5px auto;
+    width: 80%;
+    height: 50%;
+}
+
+
+.colorcontainer {
+    /* border:1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%
+}
+
+
+#colorSlider {
+    width: 80%;
+    height: 37%;
+}
+
+.lastbutton {
+    display:flex;
+    /* border: 1px solid black; */
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    color:beige;
+    background-color: rgb(69, 204, 69);
+    width: 80%;
+    height: 60%;
+}
+
+.currenttool {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    color: gray;
+}
 
 .footer {
     /* border:1px solid black; */
