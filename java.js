@@ -114,6 +114,12 @@ function changeDisplay() {
 function resetArea() {
     sketchArea.innerHTML = ""
     createCells(slider.value)
+    if (currentGrid == 'OFF') {
+        let newArray = Array.from(sketchArea.children)
+        newArray.forEach(cell => {
+            cell.style.border = '0px'
+        })
+    }
 }
 
 slider.addEventListener('input', changeDisplay)
